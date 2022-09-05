@@ -1,124 +1,318 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap</title>
-<!--Link de acesso bootstrap css-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
-<body>
-<!--Menu-->
+    <!--Link de acesso bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <style>
+      .tm-social 
+      {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-danger text-white">
-        <a class="navbar-brand text-white" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-             <a class="nav-link text-white" href="#">Doce</a>
-            </li>
-            <li class="nav-item">
-             <a class="nav-link text-white" href="#">Salgado</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> Menu </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Cadastrar Usuário</a>
-                <a class="dropdown-item" href="#">Postar Receita</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Contato</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-          </form>
+      <a class="navbar-brand text-white" href="#">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Doce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Salgado</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Cadastrar Usuário</a>
+              <a class="dropdown-item" href="#">Postar Receita</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contato</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--/Menu-->
+    <!--Grid-->
+    <!--carrossel-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://i0.wp.com/xtudoreceitas.com/wp-content/uploads/strogonoff-de-frango.webp?w=750&ssl=1"
+            class="d-block w-100"
+            alt="foto estogonofe"
+          />
         </div>
-      </nav>
-<!--/Menu-->
-<!--Grid-->
-<!--carrossel-->
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://i0.wp.com/xtudoreceitas.com/wp-content/uploads/strogonoff-de-frango.webp?w=750&ssl=1" class="d-block w-100" alt="foto estogonofe">
+        <div class="carousel-item">
+          <img
+            src="https://s2.glbimg.com/gmpKEh4h2Vuc2Em4PnOcPFBa6QU=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/K/uYB7sKQYCz9aVfpntagA/cheesecake-1.jpeg"
+            class="d-block w-100"
+            alt="foto cheesecake"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://omunicipio.com.br/wp-content/uploads/2017/07/receita-macarrao-a-bolonhesa-1-4126.jpg"
+            class="d-block w-100"
+            alt="foto macarronada bolonhesa"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#carouselExampleIndicators"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#carouselExampleIndicators"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="https://s2.glbimg.com/gmpKEh4h2Vuc2Em4PnOcPFBa6QU=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/K/uYB7sKQYCz9aVfpntagA/cheesecake-1.jpeg" class="d-block w-100" alt="foto cheesecake">
-    </div>
-    <div class="carousel-item">
-      <img src="https://omunicipio.com.br/wp-content/uploads/2017/07/receita-macarrao-a-bolonhesa-1-4126.jpg" class="d-block w-100" alt="foto macarronada bolonhesa">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
-</div>
-<!--carrossel-->
+    <!--carrossel-->
 
-<!--jumbotron-->
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Receitas com amor</h1>
-    <p class="lead">Criamos esse site com a intenção de levar para você receitas fáceis, clássicas e acessíveis para os dias de baixa inspiração mas com altos níveis de amor.</p>
-  </div>
-</div>
-<!--/jumbotron-->
-<!--cards-->
-<div class="container">
-  <div class="card-deck">
-    <div class="card">
-      <img src="https://img.cybercook.com.br/receitas/515/milk-shake-de-morango-1-840x480.jpeg?q=75" class="card-img-top" alt="Milk-shake de morango">
-      <div class="card-body">
-        <h5 class="card-title">Milk-shake de morango</h5>
-        <p class="card-text">Precisaremos de 300 ml de leite e 6 bolas de sorvete para servir duas pessoas. Mistura tudo no liquidificador e podemos opcionalmente adicionar pedaços de morango e duas gotas de essência de baunilha.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Receitas com amor</h1>
+        <p class="lead">
+          Criamos esse site com a intenção de levar para você receitas fáceis,
+          clássicas e acessíveis para os dias de baixa inspiração mas com altos
+          níveis de amor.
+        </p>
       </div>
     </div>
-    <div class="card">
-      <img src="https://cozinhatravessa.com.br/wp-content/uploads/2013/05/pizza-no-cone-com-rap10.jpg" class="card-img-top" alt="Pizza cone rap10">
-      <div class="card-body">
-        <h5 class="card-title">Rap10</h5>
-        <p class="card-text">Lanchinho prático para salvar nos dias agitados. Recheie ao seu gosto, monte e leve ao forno até dourar.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <!--/jumbotron-->
+    <!--cards-->
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="https://img.cybercook.com.br/receitas/515/milk-shake-de-morango-1-840x480.jpeg?q=75"
+            class="card-img-top"
+            alt="Milk-shake de morango"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Milk-shake de morango</h5>
+            <p class="card-text">
+              Precisaremos de 300 ml de leite e 6 bolas de sorvete para servir
+              duas pessoas. Mistura tudo no liquidificador e podemos
+              opcionalmente adicionar pedaços de morango e duas gotas de
+              essência de baunilha.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cozinhatravessa.com.br/wp-content/uploads/2013/05/pizza-no-cone-com-rap10.jpg"
+            class="card-img-top"
+            alt="Pizza cone rap10"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Rap10</h5>
+            <p class="card-text">
+              Lanchinho prático para salvar nos dias agitados. Recheie ao seu
+              gosto, monte e leve ao forno até dourar.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cooknenjoy.com/wp-content/uploads/2020/04/P1220488.jpg"
+            class="card-img-top"
+            alt="Salgadinho de forno de queijo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salgadinho de forno de queijo</h5>
+            <p class="card-text">
+              160g de farinha de trigo, 100g de manteiga, queijo parmesão ralado
+              a gosto. Faz as bolinhas e mela de gema em cima. Mistura tudo e
+              leva ao forno médio por cerca de 25 minutos ou até dourar.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="https://cooknenjoy.com/wp-content/uploads/2020/04/P1220488.jpg" class="card-img-top" alt="Salgadinho de forno de queijo">
-      <div class="card-body">
-        <h5 class="card-title">Salgadinho de forno de queijo</h5>
-        <p class="card-text">160g de farinha de trigo, 100g de manteiga, queijo parmesão ralado a gosto. Faz as bolinhas e mela de gema em cima. Mistura tudo e leva ao forno médio por cerca de 25 minutos ou até dourar.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <!--/cards-->
+    <!--texto e video-->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Vídeo de receita cheesecake</h3>
+          <p>
+            Xícara = 240ml <br /><br />
+
+            140g de biscoito maizena <br />
+            60g a 65g de manteiga <br />
+            1 colher de café de canela <br />
+            1 xícara de açúcar <br />
+            420 de cream cheese <br />
+            2 ovos grandes e + 1 gema <br />
+            1 colher de chá de baunilha <br />
+
+            Para o sour cream : (meia xicara) <br />
+            30 g de cream <br />
+            40ml creme de leite <br />
+            Meio limão <br />
+
+            Calda de morango <br />
+            300gramas de morango <br />
+            3 colheres de sopa de açúcar (pode ajustar pra mais ou menos, de
+            acordo com seu gosto) <br />
+            1 colher de chá de suco de limão <br /><br />
+
+            --------------------------------------------------------------------
+            <br />
+
+            Modo de preparo: <br />
+            No vídeo.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/UxOtKRmde2w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!--/cards-->
+    <!--/texto e video-->
+    <hr>
+    <!--footer-->
+    <footer>
+      <div class="row mb-3">
+        <div class="col-md-12  d-flex justify-content-center">
+          
+            <a
+              href="https://www.facebook.com/lorena.martins.3538/" target="_blank" class="p-5">
+              <img
+                class="tm-social pmargin"
+                src="assets/facebook.png"
+                alt="Logo do facebook"
+              />
+            </a>
+            <a href="https://github.com/loirena" target="_blank" class="p-5">
+              <img
+                class="tm-social pmargin"
+                src="assets/github-sign.png"
+                alt="Logo do github"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/loirena/?locale=pt_BR" target="_blank" class="p-5">
+              <img
+                class="tm-social pmargin"
+                src="assets/linkedin.png"
+                alt="Logo do linkedin"
+              />
+            </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center">Lorena Martins &copy;</p>
+        </div>
+      </div>
 
-<!--/Grid-->
+      
+    </footer>
+    <!--/footer-->
 
+    <!--/Grid-->
 
-
-
-
-<!--Links de acesso bootstrap js-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    <!--Links de acesso bootstrap js-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
